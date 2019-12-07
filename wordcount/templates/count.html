@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Total words in the text is : {{ total_count }}</h1>
+<br/>
+<h1>Your text is : </h1>
+<p>{{text}}</p>
+<br/>
+<h1>Sorted count of words is : </h1>
+{% for words, count in sorted_words%}
+    <p>{{ words}} - {{ count }}</p>
+{% endfor %}
+</body>
+</html>
